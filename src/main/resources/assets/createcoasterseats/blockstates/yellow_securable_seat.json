@@ -1,0 +1,1 @@
+{"variants":{"facing=north":{"model":"createcoasterseats:block/yellow_securable_seat"},"facing=east":{"model":"createcoasterseats:block/yellow_securable_seat","y":90},"facing=south":{"model":"createcoasterseats:block/yellow_securable_seat","y":180},"facing=west":{"model":"createcoasterseats:block/yellow_securable_seat","y":270}}}

@@ -1,0 +1,7 @@
+{
+  "parent": "createcoasterseats:block/white_securable_seat",
+  "textures": {
+    "0": "createcoasterseats:block/secured_seat/powered/side_white",
+    "particle": "createcoasterseats:block/secured_seat/powered/side_white"
+  }
+}
