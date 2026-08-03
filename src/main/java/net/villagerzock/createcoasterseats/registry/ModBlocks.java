@@ -7,13 +7,26 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.villagerzock.createcoasterseats.Createcoasterseats;
 import net.villagerzock.createcoasterseats.block.SecurableSeatBlock;
 
+import java.util.Collections;
+import java.util.EnumMap;
+import java.util.Map;
+
 public final class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Createcoasterseats.MOD_ID);
+    public static final Map<DyeColor, DeferredBlock<SecurableSeatBlock>> SECURABLE_SEATS;
+    public static final DeferredBlock<SecurableSeatBlock> BLACK_SECURABLE_SEAT;
 
-    public static final DeferredBlock<SecurableSeatBlock> SECURABLE_SEAT = BLOCKS.register(
-        "securable_seat",
-        () -> new SecurableSeatBlock(BlockBehaviour.Properties.of().strength(1.0F), DyeColor.WHITE)
-    );
+    static {
+        Map<DyeColor, DeferredBlock<SecurableSeatBlock>> seats = new EnumMap<>(DyeColor.class);
+        for (DyeColor color : DyeColor.values()) {
+            seats.put(color, BLOCKS.register(
+                color.getName() + "_securable_seat",
+                () -> new SecurableSeatBlock(BlockBehaviour.Properties.of().strength(1.0F), color)
+            ));
+        }
+        SECURABLE_SEATS = Collections.unmodifiableMap(seats);
+        BLACK_SECURABLE_SEAT = SECURABLE_SEATS.get(DyeColor.BLACK);
+    }
 
     private ModBlocks() {
     }

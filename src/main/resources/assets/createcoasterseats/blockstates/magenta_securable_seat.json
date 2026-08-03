@@ -1,1 +1,34 @@
-{"variants":{"facing=north":{"model":"createcoasterseats:block/magenta_securable_seat"},"facing=east":{"model":"createcoasterseats:block/magenta_securable_seat","y":90},"facing=south":{"model":"createcoasterseats:block/magenta_securable_seat","y":180},"facing=west":{"model":"createcoasterseats:block/magenta_securable_seat","y":270}}}
+{
+  "variants": {
+    "facing=north,powered=false": {
+      "model": "createcoasterseats:block/magenta_securable_seat",
+      "y": 180
+    },
+    "facing=east,powered=false": {
+      "model": "createcoasterseats:block/magenta_securable_seat",
+      "y": 270
+    },
+    "facing=south,powered=false": {
+      "model": "createcoasterseats:block/magenta_securable_seat"
+    },
+    "facing=west,powered=false": {
+      "model": "createcoasterseats:block/magenta_securable_seat",
+      "y": 90
+    },
+    "facing=north,powered=true": {
+      "model": "createcoasterseats:block/magenta_securable_seat_powered",
+      "y": 180
+    },
+    "facing=east,powered=true": {
+      "model": "createcoasterseats:block/magenta_securable_seat_powered",
+      "y": 270
+    },
+    "facing=south,powered=true": {
+      "model": "createcoasterseats:block/magenta_securable_seat_powered"
+    },
+    "facing=west,powered=true": {
+      "model": "createcoasterseats:block/magenta_securable_seat_powered",
+      "y": 90
+    }
+  }
+}

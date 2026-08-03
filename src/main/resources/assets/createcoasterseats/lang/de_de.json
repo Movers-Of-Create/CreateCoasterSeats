@@ -1,0 +1,21 @@
+{
+  "itemGroup.createcoasterseats": "Create Coaster Seats",
+  "block.createcoasterseats.white_securable_seat": "Weißer sicherbarer Sitz",
+  "block.createcoasterseats.orange_securable_seat": "Oranger sicherbarer Sitz",
+  "block.createcoasterseats.magenta_securable_seat": "Magenta sicherbarer Sitz",
+  "block.createcoasterseats.light_blue_securable_seat": "Hellblauer sicherbarer Sitz",
+  "block.createcoasterseats.yellow_securable_seat": "Gelber sicherbarer Sitz",
+  "block.createcoasterseats.lime_securable_seat": "Hellgrüner sicherbarer Sitz",
+  "block.createcoasterseats.pink_securable_seat": "Pinker sicherbarer Sitz",
+  "block.createcoasterseats.gray_securable_seat": "Grauer sicherbarer Sitz",
+  "block.createcoasterseats.light_gray_securable_seat": "Hellgrauer sicherbarer Sitz",
+  "block.createcoasterseats.cyan_securable_seat": "Türkiser sicherbarer Sitz",
+  "block.createcoasterseats.purple_securable_seat": "Violetter sicherbarer Sitz",
+  "block.createcoasterseats.blue_securable_seat": "Blauer sicherbarer Sitz",
+  "block.createcoasterseats.brown_securable_seat": "Brauner sicherbarer Sitz",
+  "block.createcoasterseats.green_securable_seat": "Grüner sicherbarer Sitz",
+  "block.createcoasterseats.red_securable_seat": "Roter sicherbarer Sitz",
+  "block.createcoasterseats.black_securable_seat": "Schwarzer sicherbarer Sitz",
+  "message.createcoasterseats.seat_locked_exit": "Du kannst gerade nicht aussteigen. Der Sitz ist gesperrt.",
+  "message.createcoasterseats.seat_locked_enter": "Du kannst dich gerade nicht hinsetzen. Der Sitz ist gesperrt."
+}

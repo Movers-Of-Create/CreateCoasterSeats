@@ -1,5 +1,21 @@
 {
-  "itemGroup.createcoasterseats": "Example Mod Tab",
-  "block.createcoasterseats.example_block": "Example Block",
-  "item.createcoasterseats.example_item": "Example Item"
+  "itemGroup.createcoasterseats": "Create Coaster Seats",
+  "block.createcoasterseats.white_securable_seat": "White Securable Seat",
+  "block.createcoasterseats.orange_securable_seat": "Orange Securable Seat",
+  "block.createcoasterseats.magenta_securable_seat": "Magenta Securable Seat",
+  "block.createcoasterseats.light_blue_securable_seat": "Light Blue Securable Seat",
+  "block.createcoasterseats.yellow_securable_seat": "Yellow Securable Seat",
+  "block.createcoasterseats.lime_securable_seat": "Lime Securable Seat",
+  "block.createcoasterseats.pink_securable_seat": "Pink Securable Seat",
+  "block.createcoasterseats.gray_securable_seat": "Gray Securable Seat",
+  "block.createcoasterseats.light_gray_securable_seat": "Light Gray Securable Seat",
+  "block.createcoasterseats.cyan_securable_seat": "Cyan Securable Seat",
+  "block.createcoasterseats.purple_securable_seat": "Purple Securable Seat",
+  "block.createcoasterseats.blue_securable_seat": "Blue Securable Seat",
+  "block.createcoasterseats.brown_securable_seat": "Brown Securable Seat",
+  "block.createcoasterseats.green_securable_seat": "Green Securable Seat",
+  "block.createcoasterseats.red_securable_seat": "Red Securable Seat",
+  "block.createcoasterseats.black_securable_seat": "Black Securable Seat",
+  "message.createcoasterseats.seat_locked_exit": "You can't exit right now. The seat is locked.",
+  "message.createcoasterseats.seat_locked_enter": "You can't sit down right now. The seat is locked."
 }

@@ -3,9 +3,9 @@
   "credit": "Made with Blockbench",
   "textures": {
     "0": "createcoasterseats:block/secured_seat/side_black",
-    "1": "createcoasterseats:block/secured_seat/top_black",
+    "1": "create:block/seat/top_black",
     "2": "createcoasterseats:block/secured_seat/bottom",
-    "3": "createcoasterseats:block/secured_seat/andesite_casing",
+    "3": "create:block/andesite_casing",
     "particle": "createcoasterseats:block/secured_seat/side_black"
   },
   "elements": [

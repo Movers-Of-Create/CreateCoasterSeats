@@ -2,6 +2,7 @@ package net.villagerzock.createcoasterseats.registry;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.villagerzock.createcoasterseats.Createcoasterseats;
@@ -14,7 +15,9 @@ public final class ModBlockEntities {
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SecurableSeatBlockEntity>> SECURABLE_SEAT =
         BLOCK_ENTITIES.register("securable_seat", () -> BlockEntityType.Builder.of(
             SecurableSeatBlockEntity::new,
-            ModBlocks.SECURABLE_SEAT.get()
+            ModBlocks.SECURABLE_SEATS.values().stream()
+                .map(DeferredHolder::get)
+                .toArray(Block[]::new)
         ).build(null));
 
     private ModBlockEntities() {

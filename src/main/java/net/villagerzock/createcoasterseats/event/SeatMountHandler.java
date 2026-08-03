@@ -33,8 +33,7 @@ public final class SeatMountHandler {
             return;
         }
 
-        if (isSecuredSeat(event.getEntityBeingMounted(), event.getLevel())
-                || isSecuredSeat(player.getVehicle(), event.getLevel())) {
+        if (isSecuredSeat(player.getVehicle(), event.getLevel())) {
             event.setCanceled(true);
             preventMountForPlayer(player);
         }
@@ -54,7 +53,7 @@ public final class SeatMountHandler {
         sendLockedMessage(player, "message.createcoasterseats.seat_locked_exit");
     }
 
-    private static void preventMountForPlayer(Player player) {
+    public static void preventMountForPlayer(Player player) {
         sendLockedMessage(player, "message.createcoasterseats.seat_locked_enter");
     }
 
