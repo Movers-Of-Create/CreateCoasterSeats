@@ -6,6 +6,7 @@ import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.villagerzock.createcoasterseats.Createcoasterseats;
+import net.villagerzock.createcoasterseats.item.CustomCoasterTrackItem;
 
 import java.util.Collections;
 import java.util.EnumMap;
@@ -15,6 +16,13 @@ public final class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Createcoasterseats.MOD_ID);
     public static final Map<DyeColor, DeferredItem<BlockItem>> SECURABLE_SEATS;
     public static final DeferredItem<BlockItem> BLACK_SECURABLE_SEAT;
+    public static final DeferredItem<CustomCoasterTrackItem> CUSTOM_COASTER_TRACK = ITEMS.register(
+        "custom_coaster_track",
+        () -> new CustomCoasterTrackItem(
+            new Item.Properties().stacksTo(64),
+            () -> CustomCoasterTrackMaterials.WOODEN
+        )
+    );
 
     static {
         Map<DyeColor, DeferredItem<BlockItem>> seats = new EnumMap<>(DyeColor.class);
