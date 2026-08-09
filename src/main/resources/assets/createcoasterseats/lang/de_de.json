@@ -17,5 +17,6 @@
   "block.createcoasterseats.red_securable_seat": "Roter sicherbarer Sitz",
   "block.createcoasterseats.black_securable_seat": "Schwarzer sicherbarer Sitz",
   "message.createcoasterseats.seat_locked_exit": "Du kannst gerade nicht aussteigen. Der Sitz ist gesperrt.",
-  "message.createcoasterseats.seat_locked_enter": "Du kannst dich gerade nicht hinsetzen. Der Sitz ist gesperrt."
+  "message.createcoasterseats.seat_locked_enter": "Du kannst dich gerade nicht hinsetzen. Der Sitz ist gesperrt.",
+  "tooltip.createcoasterseats.securable_seat.description": "Stelle die Sperrfrequenz an der Unterseite des Sitzes ein."
 }

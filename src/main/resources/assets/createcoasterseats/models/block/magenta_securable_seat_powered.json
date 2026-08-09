@@ -1,7 +1,8 @@
 {
   "parent": "createcoasterseats:block/magenta_securable_seat",
   "textures": {
-    "0": "createcoasterseats:block/secured_seat/powered/side_magenta",
-    "particle": "createcoasterseats:block/secured_seat/powered/side_magenta"
+    "0": "createcoasterseats:block/secured_seat/sidelow_on",
+    "2": "createcoasterseats:block/secured_seat/casing_on",
+    "particle": "create:block/seat/side_magenta"
   }
 }

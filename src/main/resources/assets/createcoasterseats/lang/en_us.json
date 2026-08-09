@@ -17,5 +17,6 @@
   "block.createcoasterseats.red_securable_seat": "Red Securable Seat",
   "block.createcoasterseats.black_securable_seat": "Black Securable Seat",
   "message.createcoasterseats.seat_locked_exit": "You can't exit right now. The seat is locked.",
-  "message.createcoasterseats.seat_locked_enter": "You can't sit down right now. The seat is locked."
+  "message.createcoasterseats.seat_locked_enter": "You can't sit down right now. The seat is locked.",
+  "tooltip.createcoasterseats.securable_seat.description": "Set the locking frequency on the bottom of the seat."
 }

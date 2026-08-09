@@ -6,7 +6,7 @@ import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.villagerzock.createcoasterseats.Createcoasterseats;
-import net.villagerzock.createcoasterseats.item.CustomCoasterTrackItem;
+import net.villagerzock.createcoasterseats.item.SecurableSeatItem;
 
 import java.util.Collections;
 import java.util.EnumMap;
@@ -16,19 +16,12 @@ public final class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Createcoasterseats.MOD_ID);
     public static final Map<DyeColor, DeferredItem<BlockItem>> SECURABLE_SEATS;
     public static final DeferredItem<BlockItem> BLACK_SECURABLE_SEAT;
-    public static final DeferredItem<CustomCoasterTrackItem> CUSTOM_COASTER_TRACK = ITEMS.register(
-        "custom_coaster_track",
-        () -> new CustomCoasterTrackItem(
-            new Item.Properties().stacksTo(64),
-            () -> CustomCoasterTrackMaterials.WOODEN
-        )
-    );
 
     static {
         Map<DyeColor, DeferredItem<BlockItem>> seats = new EnumMap<>(DyeColor.class);
         ModBlocks.SECURABLE_SEATS.forEach((color, block) -> seats.put(color, ITEMS.register(
             color.getName() + "_securable_seat",
-            () -> new BlockItem(block.get(), new Item.Properties())
+            () -> new SecurableSeatItem(block.get(), new Item.Properties())
         )));
         SECURABLE_SEATS = Collections.unmodifiableMap(seats);
         BLACK_SECURABLE_SEAT = SECURABLE_SEATS.get(DyeColor.BLACK);

@@ -43,7 +43,7 @@ public final class SecurableSeatRenderer extends SmartBlockEntityRenderer<Secura
             .center()
             .rotateYDegrees(horizontalRotation)
             .uncenter()
-            .translate(0, 22 / 16D, -2.5 / 16D)
+            .translate(0, 20 / 16D, -2 / 16D)
             .rotateXDegrees(-blockEntity.getHangerAngle(partialTicks))
             .light(light)
             .renderInto(poseStack, buffer.getBuffer(RenderType.cutoutMipped()));
