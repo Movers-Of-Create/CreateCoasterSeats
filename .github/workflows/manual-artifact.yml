@@ -22,10 +22,10 @@ jobs:
           cache-cleanup: always
 
       - name: Gradle build
-        run: ./gradlew build
+        run: bash gradlew build
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: cseats-artifacts
+          name: ccsartifacts
           path: build/libs/*.jar
